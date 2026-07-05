@@ -1,0 +1,40 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+html,body{
+    width : 100%;
+    height : 100%;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+#B1{
+    background-color: crimson;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+#B2{
+    background-color: rgb(197, 119, 181);
+    border-style: solid;
+    border-radius: 50%;
+}
+
