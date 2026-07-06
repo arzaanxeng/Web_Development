@@ -1,0 +1,268 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; /* Crucial so padding doesn't stretch layouts */
+    font-family: 'Gill Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* 1. Structural Site Wrapper stays at full height */
+#main{
+    width: 100%;
+    min-height: 100%; 
+    display: block; /* Elements inside stack vertically */
+}
+
+#header{
+    height: 12vh;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100; /* Keeps nav firmly over content layers */
+}
+
+#logo{
+    height: 75%;
+    display: flex;
+    align-items: center;
+}
+
+#logo img{
+    width: 80px;
+    object-fit: contain;
+}
+
+.text{
+    color:rgb(3, 3, 49)
+} 
+
+.text:hover{
+    color:lightblue
+}
+
+#contactdetails{
+    text-align: center;
+    font-weight: lighter;
+}
+
+#contactdetails:hover{
+    color:lightblue
+}
+
+.icon{
+    padding : 10px;
+    border-radius: 50%;
+}
+
+.icon:hover{
+    background-color: lightblue;
+}
+
+#login {
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; 
+}
+
+#login:hover{
+    background-color: lightblue;
+}
+
+#try{
+    color:white;
+    background-color:darkgreen;
+    padding: 10px 20px; 
+    border-radius: 8px; 
+}
+
+#try:hover{
+    background-color: lightgreen;
+}
+
+/* Pushes page content perfectly below fixed header */
+#fakeheader{
+    height: 12vh;
+    width: 100vw;
+    background-color: transparent; /* Changed from crimson so it invisible-matches */
+}
+
+#page1{
+    min-height: 88vh;
+    width: 100%;
+    background-color: beige;
+}
+
+
+
+#strip {
+    display: flex; 
+    width: 100%;
+    min-height: 40vh; 
+    background: linear-gradient(to bottom, rgb(0, 168, 245) 0%, rgb(151, 219, 255) 100%);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%; 
+}
+
+#strip #box1 {
+    width: 45%; 
+}
+
+#strip #box1 p {
+    font-size: 3.8rem;          /* Massive headline typography */
+    line-height: 1.05;          /* Crisp, tight tracking between lines */
+    letter-spacing: -1.5px;     /* Premium bold display styling */
+    color: rgb(3, 29, 102);     /* Precise Salesforce brand deep navy blue */
+    font-family: "Salesforce Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 800;           /* Extra bold weight */
+    margin-bottom: 0;           /* Removed the giant bottom margin that broke layout alignment */
+}
+
+/* RIGHT SIDE: Sub-description and Buttons Container */
+#strip #box2 {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;     /* Stacks description text over the buttons container */
+    align-items: flex-start;    /* Aligns all content cleanly to the left edge of its column */
+    gap: 20px;                  /* Even spacing between the paragraph and button rows */
+    margin-bottom: 0;           /* Removed the giant bottom margin */
+}
+
+#strip #box2 p {
+    color: rgb(3, 29, 102);    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.25rem;         
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 15px;                
+}
+
+.btn-blue {
+    color: white;
+    background-color: rgb(1, 118, 211);
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-blue:hover {
+    background-color: rgb(3, 90, 165);
+}
+
+
+.btn-white {
+    color: rgb(1, 118, 211);
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid rgb(1, 118, 211);
+    cursor: pointer;
+}
+
+.btn-white:hover {
+    background-color: rgb(244, 246, 249);
+}
+
+
+#content {
+    background-color: rgb(3, 29, 102);
+    width: 100%;
+    min-height: 48vh;
+        
+}
+
+
+#content #text h2 {
+    color: white;
+    font-size: 3.8rem;          /* Massive headline typography */
+    line-height: 1.1;           /* Tight tracking between stacked lines */
+    letter-spacing: -1.5px;     /* Premium bold display styling */ 
+    font-family: "Salesforce Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centers both blocks horizontally on the screen */
+    justify-content: center;  
+    padding: 10px;
+}
+
+/* 3. The Sub-description */
+#content .subtitle {
+    font-size: 1.5rem;          /* Sized perfectly to fit cleanly under the massive title */
+    color: rgb(11, 186, 251);   /* Bright sky blue accent text color from the image */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+}
+
+.cards_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;             
+    width: 100%;            
+    padding: 40px 20px;
+}
+
+.cards {
+    display: flex;           /* Keeps contents inside the card aligned */
+    flex-direction: column;  /* Stacks content inside the card vertically if needed */
+    align-items: flex-start; 
+    justify-content: flex-start;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid rgb(85, 85, 113);
+    border-radius: 25px;
+    background-color: rgb(10, 40, 147); /* Optional: dark blue match from previous screenshot */
+}
+/* Icons styling */
+.cards .card-icon i {
+    font-size: 1.8rem;
+    color: white;
+    padding: 5px;
+}
+.cards h3 {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 5px;
+}
+
+/* Inner descriptions */
+.cards p {
+    color: rgb(195, 210, 240); /* Softer white/blue text for the descriptions */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.cards:hover{
+    background-color: rgb(41, 153, 198);
+}
