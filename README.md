@@ -1,34 +1,37 @@
-# HTML & CSS Practice
+# HTML, CSS & JavaScript Practice
 
-Practice repository for learning and building HTML and CSS fundamentals.
+Practice repository for learning and building web development fundamentals.
+
+---
+
+## Purpose
+
+Built as part of a self-paced roadmap toward AI/ML engineering. This repo establishes the core frontend foundations and scripting logic necessary to design interactive interfaces for ML-powered projects (such as interactive dashboards, model visualization tools, and apps connecting to a FastAPI backend).
 
 ## About
 
-This repo contains beginner-to-intermediate practice files while learning core web development concepts — page structure, semantic tags, styling with CSS, and layout systems like Flexbox and Grid.
+This repo contains practice files while learning core web development concepts — page structure, semantic tags, styling with CSS, layout systems, and programming logic with JavaScript.
 
 ## What's Inside
 
-- Basic HTML structure and semantic elements
-- CSS styling (selectors, box model, typography)
-- Layout practice (Flexbox / Grid)
-- Small UI components and mini-projects
+- **HTML5:** Basic structure and semantic elements.
+- **CSS3:** Styling (selectors, box model, typography) and layout practice (Flexbox / Grid).
+- **JavaScript:** Core programming logic, DOM manipulation, data type handling, and function architecture.
 
 ## Mini Projects
-- **Hover Cards** — Interactive card UI with CSS hover effects and transitions
-- **Shapes & Design** — Practice with CSS shapes, positioning, and layout
-- **Salesforce Website Clone** — Landing page recreation practice (Flexbox/Grid layout)
-- **Amazon Website Clone** - Practising frontend skills with designing actual homepage of amazon website
+- **Hover Cards** — Interactive card UI with CSS hover effects and transitions.
+- **Shapes & Design** — Practice with CSS shapes, positioning, and layout.
+- **Salesforce Website Clone** — Landing page recreation practice (Flexbox/Grid layout).
+- **Amazon Website Clone** — Practicing frontend skills with designing the homepage of the Amazon website.
+- **Interactive JS Components** — Practical scripts covering string manipulation, counter mechanics, data validation, and logic checking.
 
 ## Tech Stack
 
 - HTML5
 - CSS3
+- JavaScript (ES6+)
 
 ## Author
 
 **Arzaan**
 GitHub: [@arzaanxeng](https://github.com/arzaanxeng)
-
-## Purpose
-
-Built as part of a self-paced roadmap toward AI/ML engineering, where this covers the frontend basics needed to build interfaces for ML-powered projects (like a FastAPI backend).
